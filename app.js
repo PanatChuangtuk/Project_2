@@ -16,8 +16,8 @@ while (true) {
   var h = prompt('กรุณากรอกความสูงของคุณ (CM.)');
   if (w > 0 && h > 0 && h != '' && w != '') {
     var bmi = w / (h / 100) ** 2;
-    document.getElementById('W').innerHTML = 'น้ำหนักของคุณ คือ ' + w + ' KG.';
-    document.getElementById('H').innerHTML = 'ความสูงของคุณ คือ ' + h + ' CM.';
+    document.getElementById('W').innerHTML = +w + ' KG.';
+    document.getElementById('H').innerHTML = +h + ' CM.';
     document.getElementById('BM').innerHTML =
       'ค่า BMI หรือค่าดัชนีมวลกาย คือ ' + bmi.toFixed(2);
     if (bmi >= 30) {
