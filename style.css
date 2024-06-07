@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 85vh;
-  background-color: #5c1b6e;
+  background-color: #6a227e;
   margin: 0;
 }
 
@@ -19,6 +19,7 @@ body {
 label {
   display: block;
   margin-top: 10px;
+  line-height: 2.7;
 }
 
 .inbox {
@@ -26,6 +27,8 @@ label {
   padding: 8px;
   margin-top: 5px;
   box-sizing: border-box;
+  color: #2980b9;
+  text-shadow: 0 0 3px #ff0000;
 }
 
 button {
@@ -49,7 +52,7 @@ button:hover {
 
 .refreshButton {
   left: 42.5%;
-  top: 70%;
+  top: 80%;
   cursor: pointer;
   position: absolute;
   display: flex;
