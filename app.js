@@ -21,7 +21,7 @@ while (true) {
     document.getElementById('BM').innerHTML = +bmi.toFixed(2);
     if (bmi >= 30) {
       document.getElementById('result').innerHTML =
-        'คุณเป็นโรคอ้วนระดับ 3 (สูงสุด) กรุณาลดน้ำหนักโดยเร็ว!';
+        'คุณเป็นโรคอ้วนระดับ 3 (สูงสุด) ';
     } else if (bmi >= 25) {
       document.getElementById('result').innerHTML = 'คุณเป็นโรคอ้วนระดับ 2';
     } else if (bmi >= 23) {
@@ -29,8 +29,7 @@ while (true) {
     } else if (bmi >= 18.5) {
       document.getElementById('result').innerHTML = 'คุณเป็นคนสุขภาพดี';
     } else {
-      document.getElementById('result').innerHTML =
-        'คุณเป็นผอมเกินไป กรุณาเพิ่มน้ำหนัก!';
+      document.getElementById('result').innerHTML = 'คุณเป็นผอมเกินไป ';
     }
     break;
   } else {
