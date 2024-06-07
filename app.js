@@ -1,10 +1,10 @@
 while (true) {
   var userInput = prompt('กรุณาเลือกเพศของคุณ :\n1.เพศชาย\n2.เพศหญิง\n');
   if (userInput == '1') {
-    document.getElementById('S').innerHTML = 'เพศของคุณ คือ เพศชาย ';
+    document.getElementById('S').innerHTML = 'เพศชาย ';
     break;
   } else if (userInput == '2') {
-    document.getElementById('S').innerHTML = 'เพศของคุณ คือ เพศหญิง ';
+    document.getElementById('S').innerHTML = 'เพศหญิง ';
     break;
   } else {
     alert('คุณไม่ได้เลือกเพศกรุณาเลือกใหม่');
