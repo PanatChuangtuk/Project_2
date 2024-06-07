@@ -1,19 +1,32 @@
-<head> </head>
-<body>
-  <!-- เพศ -->
-  <h1 id="S"></h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- เพศ -->
+      <label>Gender (Male/Female):</label>
+      <label id="S"></label>
 
-  <!-- น้ำหนัก -->
-  <h1 id="W"></h1>
+      <!-- น้ำหนัก -->
+      <label>Weight (kg):</label>
+      <label id="W" class="inbox"></label>
 
-  <!-- ความสูง -->
-  <h1 id="H"></h1>
+      <!-- ความสูง -->
+      <label>Height (cm):</label>
+      <label id="H" class="inbox"></label>
 
-  <!-- ค่า BMI -->
-  <h1 id="BM"></h1>
+      <!-- ค่า BMI -->
+      <label id="BM"></label>
 
-  <!-- ผลลัพธ์ -->
-  <h1 id="result"></h1>
-
-  <script src="app.js"></script>
-</body>
+      <!-- ผลลัพธ์ -->
+      <label id="result"></label>
+    </div>
+    <!-- สคริปต์ JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
