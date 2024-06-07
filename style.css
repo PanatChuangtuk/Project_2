@@ -1,25 +1,34 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Noto Sans Thai', Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-  background-color: #6a227e;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #a5d6a7);
+  background-attachment: fixed;
   margin: 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .calculator {
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 40px;
+  width: 25vw;
+  box-sizing: border-box;
+  border-left: 6px solid #4a6e4f;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
   margin-top: 10px;
-  line-height: 2.7;
+  color: #333;
 }
 
 .inbox {
@@ -27,51 +36,52 @@ label {
   padding: 8px;
   margin-top: 5px;
   box-sizing: border-box;
-  color: #2980b9;
-  text-shadow: 0 0 3px #ff0000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
 button {
   margin-top: 10px;
   padding: 10px;
-  background-color: #3498db;
+  background-color: #4a6e4f;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #3a573a;
 }
 
 #result {
   margin-top: 20px;
   font-weight: bold;
+  color: #333;
 }
 
 .refreshButton {
-  left: 42.5%;
-  top: 80%;
+  font-family: 'Noto Sans Thai', Arial, sans-serif;
   cursor: pointer;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 1.105vw 0.205vw rgb(35, 47, 62);
-  background-color: #232f3e;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #5d8963;
+  color: #fff;
   width: 15vw;
-  height: 3vw;
-  border-left: 0.4vw solid #b60ee5;
-  border-radius: 0.315vw;
+  border-left: 6px solid #4a6e4f;
+  border-radius: 5px;
   font-weight: bolder;
-  font-size: 21px;
-  line-height: 3vw;
+  font-size: 18px;
   text-align: center;
-  transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .refreshButton:hover {
-  color: red;
-  transition: 0.7s ease-in-out transform, 0.7s ease-in-out;
+  background-color: #3a573a;
+  transform: translateY(-2px);
 }
