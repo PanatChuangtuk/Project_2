@@ -4,33 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="background-detail"></div>
     <div class="calculator">
+      <h1>BMI Calculator</h1>
       <!-- เพศ -->
       <label>Gender (Male/Female):</label>
-      <label id="S" class="inbox"></label>
+      <label id="S"></label>
 
       <!-- น้ำหนัก -->
-      <label>Weight (kg) :</label>
+      <label>Weight (kg):</label>
       <label id="W" class="inbox"></label>
 
       <!-- ความสูง -->
-      <label>Height (cm) :</label>
+      <label>Height (cm):</label>
       <label id="H" class="inbox"></label>
 
       <!-- ค่า BMI -->
-      <label>BMI </label>
-      <label id="BM" class="inbox"></label>
+      <label>ค่า BMI หรือค่าดัชนีมวลกาย คือ </label>
+      <label id="BM"></label>
 
       <!-- ผลลัพธ์ -->
       <label>ผลจากการนำค่า BMI ไปเปรียบเทียบ</label>
-      <label id="result" class="inbox"></label>
+      <label id="result"></label>
     </div>
     <button class="refreshButton" onclick="location.reload()">
       คำนวณน้ำหนักใหม่อีกครั้ง
     </button>
+    <footer>&copy; 2024 BMI Calculator</footer>
     <!-- สคริปต์ JavaScript -->
     <script src="app.js"></script>
   </body>
