@@ -19,22 +19,17 @@ while (true) {
     document.getElementById('W').innerHTML = 'น้ำหนักของคุณ คือ ' + w + ' KG.';
     document.getElementById('H').innerHTML = 'ความสูงของคุณ คือ ' + h + ' CM.';
     document.getElementById('BM').innerHTML =
-      'ค่า BMI หรือค่าดัชนีมวลกาย คือ ' + bmi.toFixed(2); //toFixed กำหนดจำนวนทศนิยมที่ต้องการให้แสดงผล
+      'ค่า BMI หรือค่าดัชนีมวลกาย คือ ' + bmi.toFixed(2);
     if (bmi >= 30) {
-      // ส่วนเงื่อนไขของคนที่ BMI มากกว่าหรือเท่ากับ 30 ขึ้นไป
       document.getElementById('result').innerHTML =
         'คุณเป็นโรคอ้วนระดับ 3 (สูงสุด) กรุณาลดน้ำหนักโดยเร็ว!';
     } else if (bmi >= 25) {
-      // ส่วนเงื่อนไขของคนที่ BMI มากกว่าหรือเท่ากับ 25 ขึ้นไป
       document.getElementById('result').innerHTML = 'คุณเป็นโรคอ้วนระดับ 2';
     } else if (bmi >= 23) {
-      // ส่วนเงื่อนไขของคนที่ BMI มากกว่าหรือเท่ากับ 23 ขึ้นไป
       document.getElementById('result').innerHTML = 'คุณเป็นโรคอ้วนระดับ 1';
     } else if (bmi >= 18.5) {
-      // ส่วนเงื่อนไขของคนที่ BMI มากกว่าหรือเท่ากับ 18.5 ขึ้นไป
       document.getElementById('result').innerHTML = 'คุณเป็นคนสุขภาพดี';
     } else {
-      // ส่วนเงื่อนไขของคนที่ BMI น้อยกว่า 18.5
       document.getElementById('result').innerHTML =
         'คุณเป็นผอมเกินไป กรุณาเพิ่มน้ำหนัก!';
     }
